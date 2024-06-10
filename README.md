@@ -1,3 +1,4 @@
 # Emphasis
-# Conflict
-# New Change
+# Note: Add a graph for net income
+# Note: Add a graph for expenses
+# End
