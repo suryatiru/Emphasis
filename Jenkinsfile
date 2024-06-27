@@ -23,7 +23,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Step 4'
-                sh 'python example_script.py'
+                sh 'python3 example_script.py'
             }
         }
     }
