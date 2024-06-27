@@ -5,13 +5,13 @@ pipeline {
         stage('Step 1') {
             steps {
                 echo 'Step 1'
-                bat 'java -version'
+                sh 'java -version'
             }
         }
         stage('Step 2') {
             steps {
                 echo 'Step 2'
-                bat 'git --version'
+                sh 'git --version'
             }
         }
         stage('Cloning Repo') {
@@ -23,7 +23,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Step 4'
-                bat 'python example_script.py'
+                sh 'python example_script.py'
             }
         }
     }
