@@ -20,10 +20,15 @@ pipeline {
                 git branch: 'graph_feature', url: 'https://github.com/suryatiru/Emphasis.git'
             }
         }
+        stage('Install Dependencies') {
+             steps {
+                sh 'pip install -r numpy'
+             }
+         }
         stage('Build') {
             steps {
                 echo 'Step 4'
-                sh 'python3 -V'
+                sh 'python3 example_script.py'
             }
         }
     }
